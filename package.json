@@ -1,0 +1,34 @@
+{
+  "name": "@dp/babel-plugin-import-beeui",
+  "version": "0.0.1",
+  "description": "babel plugin of import for bee-ui.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib",
+    "lint": "eslint --ext .js src --fix"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "babel-plugin",
+    "import",
+    "bee-ui"
+  ],
+  "author": "hudingyu",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-types": "^6.26.0",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "pre-commit": "^1.2.2"
+  }
+}
