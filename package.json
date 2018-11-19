@@ -1,8 +1,8 @@
 {
-  "name": "@dp/babel-plugin-import-beeui",
-  "version": "0.0.1",
+  "name": "@dp/babel-plugin-beeui",
+  "version": "0.0.2",
   "description": "babel plugin of import for bee-ui.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib",
     "lint": "eslint --ext .js src --fix"

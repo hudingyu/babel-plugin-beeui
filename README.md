@@ -1,4 +1,4 @@
-# babel-plugin-import-beeui
+# babel-plugin-beeui
 
 ## Usage
 ### From
@@ -16,7 +16,7 @@ import Pagination from '@dp/bee-ui/src/components/ui-base/pagination/pagination'
 ## Install
 
 ```bash
-yarn add babel-plugin-import-beeui --dev
+yarn add babel-plugin-beeui --dev
 ```
 
 
