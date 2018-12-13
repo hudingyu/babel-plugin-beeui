@@ -1,7 +1,6 @@
-function camel2Underline (_str) {
-	const str = _str[0].toLowerCase() + _str.substr(1);
-
-	return str.replace(/([A-Z])/g, $1 => `_${$1.toLowerCase()}`);
+function camel2Dash(_str) {
+    const str = _str[0].toLowerCase() + _str.substr(1);
+    return str.replace(/([A-Z])/g, ($1) => `-${$1.toLowerCase()}`);
 }
 
 module.exports = function core (defaultLibraryName) {
@@ -15,7 +14,7 @@ module.exports = function core (defaultLibraryName) {
 
 				const sourceName = (componentName) => {
 					// @dp/bee-ui @0.1.1
-					let name = camel2Underline(componentName);
+					let name = camel2Dash(componentName);
 					if (name === 'bee-option') {
 						return `@dp/bee-ui/src/components/ui-base/select/${name}`;
 					}
